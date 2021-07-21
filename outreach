@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Outreach</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Hannah Hasson</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="science.html">Science</a></li>
+                      <li><a href="outreach.html">Outreach</a></li>
+											<li><a href="blog.html">Blog</a></li>
+<!-- 											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li> -->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Outreache</h2>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Research Experience for High school students (REH)</h3>
+								<p><span class="image left"><img src="images/Students_interferometer.jpg" alt="Students studying a laser interferometer" /></span>In the summer of 2020, in the midst of full-blown panini lockdown, the Gourdain lab took a leap into the world of building meaningful, long-term connections with the local Rochester community through a program we named the REH: Research Experience for High school students. This is a nod to the NSF-funded "Research Experiences for Undergrads (REU)" that are popular and well-respected across disciplines and institutions. These are paid, immersive research experiences that last an entire summer in which a student takes on a significant research project, and is often a direct stepping-stone to getting into a graduate research program. We decided to design our outreach program with this model in mind, but we scaled the length down to a month and set the goal of providing positive exposure to physics research for students. The students would also learn some great research skills that could be applied if they decided to continue research in college. </p>
+                <p>For the first summer, due to the lockdown we operated completely virtual, meeting with the students once or twice a day on Zoom. These meeting times were used to teach the students about our lab's research, show research talks from professors, teach them basic python coding, and work on mini data analysis projects. We had nine students total, assigned in groups of three to one of the graduate student mentors in my lab (myself, James Young, and Imani West-Abdallah). At the end of the "internship," each of the groups presented their findings to each other and the members of the Gourdain lab. We kept in touch with these students after the month-long internship, checking in and offering support in applying to college.</p>
+                <p>For the second summer (2021), we stepped up the program another level (or five). The students were now in person five days a week and would be completing 5 weeks of paid work/education. We supplemented the Intro to Python workshop with a number of other research skill workshops, including 3D CAD modeling and circuitry. The students also participated in career development workshops, graduate and undergraduate research talks, and lab tours weekly. We also expanded the program into another research group, the Blok lab, which studies quantum information. Students worked in the lab in-person for a couple hours every day in pairs this time with their graduate mentors; myself, Imani, and a third group in the Blok lab: Ray Parker and Mihirangi Medahinne Gedara. Each group worked on a separate experimental physics project in which the students gathered data and performed analysis.</p>
+
+								<hr />
+
+								<h4>Python for High School Students</h4>
+								<p><span class="image right"><img src="images/Shadowgraph_05256_t1.png" alt="shadowgraphy data" style="width:142px;height:250px;" /></span></p>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://github.com/hrhasson/" class="icon brands fa-github"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/hrhasson/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:hrhasson@ur.rochester.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Hannah R. Hasson 2021</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
