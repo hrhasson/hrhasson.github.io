@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>H. Hasson's Blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/blog.css" />
+		<link rel="stylesheet" href="assets/css/pre.css" />
+		
+		<!-- uses google-code-prettify for syntax highlighting 
+			 see https://github.com/google/code-prettify for more info -->
+		<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js">
+		</script>
+		
+		<!-- uses MathJax CDC for LaTeX support
+			 see http://docs.mathjax.org/en/latest/start.html for more info -->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config
+			({
+				extensions: ["tex2jax.js"],
+				jax: ["input/TeX", "output/HTML-CSS"],
+				tex2jax: 
+				{
+					inlineMath: [['$','$'], ['\\(','\\)']],
+					displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+					processEscapes: true
+				},
+				"HTML-CSS": { availableFonts: ["MathJax TeX"] }
+			});
+		</script>
+		<script type="text/javascript" 
+				src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+		</script>
+	</head>
+	<body class="is-preload landing" onload="setup()">
+		<div id="page-wrapper">
+			<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Hannah Hasson</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="science.html">Science</a></li>
+											<li><a href="blog.html">Blog</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+			<!-- Main -->
+<article id="main">
+      <header>
+						<h2>Latest Blogs</h2>
+			</header>
+
+      <section class="wrapper style5">
+						<div class="inner">
+
+                            <!-- latest 10 blog -->
+                      {% for post in site.posts limit:10 %}
+                            <div class="vote-item">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="vote-actions">
+                                        </div>
+                                        <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title">
+                                            {{ post.title }}
+                                        </a>
+                                        <div class="vote-info">
+                                        {% if site.disqus %}
+                                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ post.url }}">0</span>)</a>
+                                        {% endif %}
+                                            <i class="fa fa-clock-o"></i> <a>{{ post.date | date: "%-d %b %Y" }}</a>
+                                            <i class="fa fa-user"></i> <a>{{ site.author.name }}</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 ">
+                                        <div class="vote-icon">
+                                            {% if post.icon %}<i class="fa {{ post.icon }}"> </i>{% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+              
+            </div>
+    </section>
+</article>
